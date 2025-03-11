@@ -1,0 +1,7 @@
+spack:
+  include:
+  - ../_config/packages.yaml
+  - ../_config/compilers.yaml
+
+  specs:
+    - zlib
