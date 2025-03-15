@@ -3,5 +3,19 @@ spack:
   - ../_config/packages.yaml
   - ../_config/compilers.yaml
 
+  mirrors:
+    e4s:
+      url: ~/mirror
+      autopush: true
+      signed: true
+
+  concretizer:
+    unify:
+      false
+
   specs:
-    - zlib
+    - zlib@1.3.1
+    - zlib@=1.3
+    - gmake
+
+  view: false
